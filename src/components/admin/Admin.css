@@ -1,0 +1,339 @@
+/* Admin */
+.container-admin{
+    display: flex;
+}
+/* Home */
+/* Siderbar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.sidebar {
+    width: 250px;
+    background: linear-gradient(to right, #57B9DE, #D43AF5);
+    color: white;
+    box-sizing: border-box;
+    display: inline-block;
+    min-height: 695px;
+}
+.sidebar h4,h5 {
+    text-align: center;
+    background: linear-gradient(to right, #57B9DE, #D43AF5);
+}
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+    cursor: pointer;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li i{
+    font-size: 23px;
+}
+span i{font-size: 23px;}
+.sidebar ul li {
+    padding: 10px;    
+}
+.sidebar li:hover{
+    background: linear-gradient(to right, #57B9DE, #D43AF5);
+    color: white;
+}
+.dropdown:hover{
+    background: linear-gradient(to right, #57B9DE, #D43AF5);
+    color: white;
+    cursor: pointer;
+}
+.dropdown a:hover{
+    background-color: white;
+    color: #5b43f6;
+}
+.sidebar span{
+    padding-left: 10px;
+    color: black;
+    font-size: large;
+}
+.sidebar ul li ul {
+    padding-left: 20px;
+}
+.display-username h5 {
+    background-color: transparent;
+    
+}
+/* HomePage */
+.container-home{
+    display: inline-block;
+}
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #f0f0f0;
+    padding: 0px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    font-size: 20px;
+    cursor: pointer;
+}
+.card h3{
+    height: 130px;
+    padding: 30px;
+}
+.card.blue {
+    background-color: #00bfff;
+}
+.card.darkblue {
+    background-color: #1e90ff;
+}
+.card.green {
+    background-color: #228b22;
+}
+.card.yellow {
+    background-color: #ffcc00;
+}
+.card.red {
+    background-color: #ff4500;
+}
+.card h3 {
+    margin: 0;
+    font-size: 36px;
+}
+.card p {
+    margin: 10px 0 0;
+}
+.card .details {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(96, 95, 95);
+    height: 50px;
+    color: black;
+
+}
+.card .details i {
+    margin-left: 5px;
+
+}
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+/* Add*/
+.header-add{
+    background-color: #cbd5e0;
+    padding:10px;
+}
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1200px;
+}
+.form-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.form-container form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-container form input,
+.form-container form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+}
+.form-container form .full-width {
+    grid-column: span 2;
+}
+.form-container form .gender-container {
+    display: flex;
+    align-items: center;
+}
+.form-container form .gender-container select {
+    margin-left: 10px;
+}
+.button-add{
+    height: 40px;
+    width: 100px;
+    background-color: #00bfff;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin-left: 500px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: #00bfff;
+}
+.notification-success{
+    background-color: #228b22;
+    color: white;
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 5px ;
+}
+.notification-error{
+    background-color: red;
+    color: white;
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 5px ;
+}
+/* System Student */
+.limited{
+    max-height: 695px;
+    width: 1210px;
+    overflow: scroll;
+}
+table {
+    min-width: 1500px;
+    margin: 20px;
+}
+tr{
+    text-align: center;
+}
+.fullName-table{
+    width: 250px;
+}
+.address-table{
+    width: 300px;
+}
+.repair-table{
+    width: 200px;
+}
+.btn-update{
+    background-color: #228b22;
+    color: white;
+    border: #228b22;
+    border-radius: 10px;
+    height: 30px;
+}
+.btn-update:hover{
+    background-color: white;
+    color: #228b22;
+    border: white;
+  
+}
+.btn-delete{
+    background-color: red;
+    color: white;
+    border: red;
+    border-radius: 10px;
+    height: 30px;
+}
+.btn-delete:hover{
+    background-color: white;
+    color: red;
+    border: white;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.boxup {
+    background-color: #228b22;
+    width: 100%;
+    height: 50px;
+}
+
+.boxup p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
+/* ListClass */
+.content .filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.content .filter select,
+.content .filter button {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.content .filter button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.content .filter button:last-child {
+    background-color: #28a745;
+}
+.content table{
+    width: 1000px;
+}
+/* AddClass */
+.btn-addClass{
+    text-align: center;
+}
+.btn-addClass button{
+    margin: 10px ;
+}
+/* DetailStudent */
+.DetailStudent-container{
+    display: flex;
+}
+.DetailStudent-container img {
+    width: 215px;
+    height: 300px;
+}
+.DetailStudent-content{
+    margin-left: 50px;
+    font-size: larger;
+}
+.DetailStudent-content span {
+    font-weight: bolder;
+}
+/* MarkTable */
+.mark-title{
+    display: flex;
+    margin-left: 20px;
+}
+.mark-title p {
+    margin-right: 40px;
+}
