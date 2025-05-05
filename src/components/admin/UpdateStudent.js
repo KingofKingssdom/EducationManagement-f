@@ -2,7 +2,7 @@ import './Admin.css'
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
-import Sidebar from './SideBar';
+import Sidebar from './Sidebar';
 function UpdateStudent(){
     const { id } = useParams();
     const navigate = useNavigate();

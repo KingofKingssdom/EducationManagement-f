@@ -47,7 +47,7 @@ function Sidebar() {
         <ul>
             <span><i><FaUser /></i> Tài khoản: </span>
                 <div className='display-username'><h5>{fullName}</h5></div> 
-            <li><Link to="/adminPage"> <i><FaHome /></i> Trang chủ</Link> </li>
+            <li><Link to="/"> <i><FaHome /></i> Trang chủ</Link> </li>
              <span>Tài khoản</span> 
             <li className='dropdown'>
                 <div className='' onClick={toggleAccount}><FaAddressBook /> Thêm tài khoản <MdOutlineKeyboardArrowDown /></div>

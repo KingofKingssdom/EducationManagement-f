@@ -1,7 +1,7 @@
 import './Admin.css';
 import axios from 'axios';
 import { useState } from 'react';
-import Sidebar from './SideBar';
+import Sidebar from './Sidebar.js';
 
 
 function AddSemester() {

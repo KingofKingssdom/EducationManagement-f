@@ -1,6 +1,6 @@
 import './Admin.css'
 import { useState } from 'react';
-import Sidebar from './SideBar';
+import Sidebar from './Sidebar';
 function UpdateSubject(){
     const [showMessage, setShowMessage] = useState(false);
     const handleUpdate = (e) => {

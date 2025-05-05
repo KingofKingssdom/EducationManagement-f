@@ -2,7 +2,7 @@ import "./Admin.css"
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from 'axios';
-import Sidebar from "./SideBar";
+import Sidebar from "./Sidebar";
 
 function SystemTeacher () {
     const [teachers, setTeachers] = useState([]);

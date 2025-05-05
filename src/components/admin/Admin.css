@@ -88,7 +88,6 @@ span i{font-size: 23px;}
     flex-wrap: wrap;
     gap: 20px;
 }
-
 .card {
     flex: 1 1 calc(33.333% - 20px);
     background-color: #f0f0f0;
@@ -98,13 +97,13 @@ span i{font-size: 23px;}
     text-align: center;
     color: white;
     width: 200px;
-    height: 200px;
+    height: 160px;
     overflow: hidden;
     font-size: 20px;
     cursor: pointer;
 }
 .card h3{
-    height: 130px;
+    height: 50px;
     padding: 30px;
 }
 .card.blue {
@@ -231,6 +230,7 @@ table {
 tr{
     text-align: center;
 }
+
 .fullName-table{
     width: 250px;
 }
@@ -319,8 +319,8 @@ tr{
     display: flex;
 }
 .DetailStudent-container img {
-    width: 215px;
-    height: 300px;
+    width: 480px;
+    height: 270px;
 }
 .DetailStudent-content{
     margin-left: 50px;

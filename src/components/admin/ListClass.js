@@ -2,7 +2,7 @@ import "./Admin.css"
 import {  useState } from "react";
 import axios from 'axios';
 import { Link } from "react-router-dom";
-import Sidebar from "./SideBar";
+import Sidebar from "./Sidebar";
 
 function ListClass(){
     const [selectedClass, setSelectedClass] = useState("10A1"); 

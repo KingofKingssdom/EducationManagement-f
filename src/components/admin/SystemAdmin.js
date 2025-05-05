@@ -2,7 +2,7 @@ import "./Admin.css"
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from 'axios';
-import Sidebar from "./SideBar";
+import Sidebar from "./Sidebar";
 
 function SystemAdmin () {
     const [admin, setAdmin] = useState([]);
@@ -44,8 +44,8 @@ function SystemAdmin () {
                             <th className="address-table">Địa chỉ</th>
                             <th className="repair-table">Điều chỉnh</th>
                         </tr>
-                    </thead>
-                    <tbody>
+            </thead>
+            <tbody>
                     {admin.map((admin, index) => (
                                 <tr key={admin.id || index}>
                                     <td>{admin.id}</td>
@@ -66,7 +66,7 @@ function SystemAdmin () {
                                 </tr>
                             ))}
 
-                    </tbody>
+            </tbody>
         </table>
             </div>
              

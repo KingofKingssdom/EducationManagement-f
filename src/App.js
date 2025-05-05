@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Correct import
-import Login from './components/Login';
 import Home from './components/admin/Home';
 import AddStudent from "./components/admin/AddStudent";
 import AddTeacher from "./components/admin/AddTeacher";
@@ -20,15 +19,13 @@ import ViewSubject from "./components/admin/ViewSubject";
 import ViewSemester from "./components/admin/ViewSemester";
 import DetailTeacher from "./components/admin/DetailTeacher";
 import ListTeacher from "./components/admin/ListTeacher";
-import HomePageTeacher from './components/teacher/HomePageTeacher';
 import AddMark from './components/admin/AddMark';
 function App() {
   return (
     <BrowserRouter> {/* BrowserRouter wraps everything */}
       <div className="container-admin">
         <Routes>
-          <Route path="/" element={<Login/>} />
-          <Route path="/adminPage/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/addAdmin" element={<AddAdmin />} />
           <Route path="/addStudent" element={<AddStudent />} />
           <Route path="/addTeacher" element={<AddTeacher />} />
@@ -47,7 +44,6 @@ function App() {
           <Route path="/viewSemester" element={<ViewSemester />} />
           <Route path="/detailTeacher/:id" element={<DetailTeacher />} />
           <Route path="/listTeacher" element={<ListTeacher />} />
-          <Route path="/teacherPage" element={<HomePageTeacher/>}/>
           <Route path="/addMark" element={<AddMark/>}/>
         </Routes>
       </div>

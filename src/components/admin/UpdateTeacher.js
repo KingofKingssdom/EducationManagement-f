@@ -2,7 +2,7 @@ import './Admin.css'
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
-import Sidebar from './SideBar';
+import Sidebar from './Sidebar';
 function UpdateTeacher(){
     const { id } = useParams();
     const navigate = useNavigate();
@@ -127,8 +127,8 @@ function UpdateTeacher(){
                     <div className="gender-container">
                         <label htmlFor="gender">Giới tính:</label>
                         <select id="gender" name="gender" value={teacher.gender} onChange={handleChange}>
-                            <option value="nam">Nam</option>
-                            <option value="nu">Nữ</option>
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
                         </select>
                     </div>
                     <div>

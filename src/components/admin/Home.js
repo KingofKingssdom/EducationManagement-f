@@ -3,7 +3,7 @@ import './Admin.css'
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import Sidebar from "./SideBar";
+import Sidebar from "./Sidebar";
 
 function Home(){
     const [countStudent, setCountStudent] = useState("");
@@ -110,7 +110,7 @@ function Home(){
         <>
         <div className="container-admin">
             <Sidebar/>
-            <div className="container-home">
+        <div className="container-home">
         <div className="content">
         <div className="header">
             <div className="menu-icon"><i className="fas fa-bars"></i></div>
